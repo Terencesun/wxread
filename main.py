@@ -52,6 +52,7 @@ def get_wr_skey():
 
 
 index = 1
+logging.info(f"阅读预期时长：{READ_NUM*0.5}小时")
 while index <= READ_NUM:
     data['ct'] = int(time.time())
     data['ts'] = int(time.time() * 1000)
